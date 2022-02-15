@@ -1,0 +1,69 @@
+.VprofileGrid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 70px);
+    /* margin: auto; */
+}
+
+.VprofileDetails {
+    padding: 20px;
+    box-shadow: 2px 2px 10px grey;
+    width: 400px;
+    border-radius: 5px;
+}
+
+.VprofileDetails .profile {
+    display: flex;
+    align-items: center;
+}
+
+.VprofileDetails .profile img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.VprofileDetails .profile h4 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.VprofileDetails .profile span {
+    color: #888;
+    font-size: 15px;
+}
+
+.VprofileDetails .contact {
+    margin: 10px 0;
+}
+
+.VprofileDetails .contact h4 {
+    font-weight: 500;
+    color: #666;
+    margin: 20px 10px 10px 0;
+}
+
+.VprofileDetails .contact li {
+    color: #666;
+    padding-left: 10px;
+    margin: 6px 0;
+}
+
+.VprofileDetails .contact li span {
+    padding-left: 10px;
+}
+
+@media (max-width: 600px) {
+    .VprofileDetails {
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .VprofileDetails {
+        width: 250px;
+    }
+}

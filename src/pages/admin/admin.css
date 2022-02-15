@@ -1,0 +1,60 @@
+a {
+    text-decoration: none !important;
+}
+
+
+#admin .admin-side-navigation {
+    background-color: #282c34;
+    padding: 30px;
+    color: #fff;
+    height: 100%;
+    min-height: 100vh;
+    
+}
+
+#admin .col-md-9 {
+    padding: 50px;
+}
+
+#admin .list-group-item a {
+    text-decoration: none;
+    display: block;
+    color: #212529;
+}
+
+#admin .list-group-item:hover {
+    box-shadow: 1px 1px 10px #888;
+    z-index: 1;
+}
+
+/* #141619 */
+
+#admin .posts table {
+    margin-top: 40px;
+}
+
+#admin .posts table a {
+    color: #000;
+}
+
+#admin .page-header {
+    display: flex;
+}
+
+#admin .page-header .header-action {
+    margin-left: auto;
+}
+
+#admin .page-header .header-action .btn-success {
+    margin-right: 10px;
+    margin-left: 10px;
+    color: #fff;
+}
+
+#admin .page-header .header-action button a {
+    color: #fff;
+}
+
+#admin .add-new-form {
+    margin: 50px 200px 0 30px;
+}

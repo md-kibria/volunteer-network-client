@@ -1,88 +1,77 @@
-nav {
-    display: flex;
-    justify-content: space-between !important;
-    align-items: center;
-    height: 70px;
-}
-
-nav h2 {
-    font-weight: 400;
-    color: #fff;
-}
-
-nav p {
-    color: #fff;
-    background-color: rgb(29, 185, 29);
-    height: 30px;
-    display: flex;
-    align-items: center;
-    padding: 0 15px;
-    border-radius: 15px;
-}
-
-.title {
-    font-weight: 350;
+.header {
+    padding: 0 100px;
     text-align: center;
-    font-size: 45px;
-    color: #fff;
-    margin-top: 0;
 }
 
-.searchBar {
-    height: 40px;
-    background-color: #fff;
-    width: 400px;
-    margin-left: 50%;
-    transform: translate(-50%);
-    border-radius: 20px;
+.header h1 {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.header .searchForm {
+    border: 1px solid grey;
+    width: 350px;
     display: flex;
     justify-content: space-between;
+    margin: 40px auto;
 }
 
-.searchField {
+.header .searchForm input {
     height: 40px;
-    width: calc(70% - 10px);
-    padding: 0 0  0 15px;
+    width: 250px;
+    padding-left: 10px;
     border: none;
-    background-color: transparent;
-    font-size: 17px;
-    z-index: 444;
+    font-size: 17PX;
 }
 
-.searchField:focus, .searchBtn:focus {
+.header .searchForm button {
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-left: 1px solid grey;
+    font-size: 17px;
+    background-color: rgb(38, 92, 209);
+    color: #fff;
+}
+
+.header .searchForm button a {
+    color: #fff;
+}
+
+.header .searchForm input:focus,
+.header .searchForm button:focus {
     outline: none;
 }
 
-
-
-.searchBtn {
-    height: 40px;
-    width: 130px;
-    border-radius: 20px;
-    border: none;
-    font-size: 17px;
-    background-color: #00b100;
-    cursor: pointer;
-}
-
-@media(max-width: 500px) {
-    .searchBar {
-        width: 290px;
+@media (max-width: 550px) {
+    .header {
+        padding: 0 50px;
     }
 
-    .searchBtn {
-        width: 100px;
-    }
-}
-
-@media(max-width: 350px) {
-    .title {
-        font-size: 40px;
-    }
-    .searchBar {
+    .header .searchForm {
         width: 250px;
     }
-    .searchBtn {
-        width: 80px;
+
+    .header .searchForm input {
+        width: 180px;
+    }
+
+    .header .searchForm button  {
+        width: 70px;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .header .searchForm {
+        width: 200px;
+    }
+
+    .header .searchForm input {
+        width: 135px;
+    }
+
+    .header .searchForm button  {
+        width: 65px;
     }
 }

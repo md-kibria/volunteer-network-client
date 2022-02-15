@@ -1,0 +1,27 @@
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputGroup label {
+    padding: 10px 0;
+    color: rgb(110, 110, 110);
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.inputGroup input {
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid rgb(212, 212, 212);
+    border-radius: 4px;
+    font-size: 15px
+}
+
+.inputGroup input:focus {
+    outline: none;
+}
+
+.errorMsg {
+    color: red;
+}

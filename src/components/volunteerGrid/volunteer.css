@@ -1,0 +1,49 @@
+.volunteer {
+    width: 100%;
+    height: 260px;
+}
+
+.volunteer .imgSection {
+    height: 200px;
+    width: 100%;
+}
+
+.volunteer .imgSection img {
+    height: 100%;
+    width: 100%;
+}
+
+.volunteer .textSection {
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+}
+
+.volunteer .textSection.bg1 {
+    background-color: coral;
+}
+
+.volunteer .textSection.bg2 {
+    background-color: cornflowerblue;
+}
+
+.volunteer .textSection.bg3 {
+    background-color:darkorchid;
+}
+
+.volunteer .textSection.bg4 {
+    background-color: orange;
+}
+
+
+.volunteer .textSection.bg5 {
+    background-color:plum;
+}
+
+.volunteer .textSection h3 {
+    margin: 0;
+    padding-left: 15px;
+    font-weight: 400;
+    color: #fff;
+}

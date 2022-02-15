@@ -1,0 +1,74 @@
+.signupForm {
+    padding: 20px 50px;
+    width: 500px;
+    margin: auto;
+}
+
+.signupForm h2 {
+    font-size: 40px;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 50px;
+}
+
+.signupForm h2::before {
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 300px;
+    background-color: black;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.signupForm h2::after {
+    content: '';
+    position: absolute;
+    height: 10px;
+    width: 70px;
+    background-color: black;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.signupForm .checkBox {
+    padding: 15px 0;
+}
+
+.signupForm .checkBox span {
+    color: #333;
+    padding-left: 10px;
+}
+
+.signupForm .signupBtn {
+    width: 100%;
+    height: 35px;
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 4px;
+    font-size: 17px;
+}
+
+@media (max-width: 750px) {
+    .signupForm {
+        padding: 20px 50px;
+        width: 400px;
+    }
+}
+
+@media (max-width: 600px) {
+    .signupForm {
+        padding: 20px 20px;
+        width: 300px;
+    }
+}
+
+@media (max-width: 400px) {
+    .signupForm {
+        padding: 20px 15px;
+        width: 250px;
+    }
+}

@@ -1,0 +1,153 @@
+.navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 80px;
+    z-index: 999;
+}
+
+.logo h1 {
+    font-weight: 400;
+    font-size: 30px;
+}
+
+.logo h1 a {
+    color: #000;
+}
+
+.menuSection {
+    
+}
+
+.menuSection i {
+    display: none;
+    visibility: hidden;
+    font-size: 25px;
+}
+
+.menus {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    transition: .3s;
+}
+
+.menus a,
+.menus span {
+    color: #000;
+    text-decoration: none;
+    padding: 6px 10px;
+}
+
+.menus .signup a,
+.menus .signup span {
+    background-color: rgb(0, 170, 77);
+    height: 20px;
+    margin: 0 5px;
+    color: #fff;
+    padding: 6px 15px;
+}
+
+.menus .login a,
+.menus .login span {
+    background-color: #242442;
+    height: 20px;
+    margin: 0 5px;
+    color: #fff;
+    padding: 6px 15px;
+}
+
+.menus .services {
+    position: relative;
+}
+
+.menus .services span {
+    padding: 24px 15px;
+}
+
+.menus .services:hover .servicesDropdown {
+    display: block;
+    visibility: visible;
+}
+
+.servicesDropdown {
+    width: 200px;
+    background-color: rgb(233, 233, 233);
+    position: absolute;
+    top: 45px;
+    left: -60px;
+    display: none;
+    visibility: hidden;
+    padding: 10px;
+}
+
+.menus .profile {
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.servicesDropdown li {
+    padding: 5px 0;
+    text-align: center;
+}
+
+.servicesDropdown li:hover {
+    background-color: whitesmoke;
+}
+
+@media (max-width: 850px) {
+    .menuSection i {
+        display: block;
+        visibility: visible;
+    }
+
+    .menus {
+        display: flex;
+        /* display: none; */
+        position: absolute;
+        top: 70px;
+        left: 100%;
+        width: 100%;
+        height: calc(100vh - 70px);
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: #fff;
+    }
+
+    .show {
+        left: 0;
+    }
+
+    .menus li {
+        padding: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menus li:hover {
+        background-color: plum;
+    }
+
+    .servicesDropdown {
+        position: absolute;
+        top: 45px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar {
+        padding: 0 50px;
+    }
+
+    .logo h1 {
+        font-weight: 400;
+        font-size: 25px;
+    }
+}

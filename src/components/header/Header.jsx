@@ -1,43 +1,36 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
+import { Link } from 'react-router-dom/cjs/react-router-dom.min'
 import './header.css'
 
 function Header() {
 
-    const [search, setSearch] = useState()
+    const [term, setTerm] = useState('')
 
-    const haneleSubmit = (event) => {
+    const handleSubmit = event => {
         event.preventDefault()
-        
-        if (search) {
-            alert(search)
-            setSearch('')
-        } else {
-            alert('Fill the text field')
-        }
+
+        console.log(term)
     }
 
     return (
-        <div>
-            <nav>
-                <h2>Logo</h2>
-                <p className="singin">SignIn</p>
-            </nav>
-            <h1 className="title">Search Song</h1>
-            <form className="searchBar" onSubmit={(e) => haneleSubmit(e)}>
-                <input
-                    type="text" 
-                    className="searchField"
-                    placeholder="Search by name or lyrics"
-                    name="search"
-                    value={search}
-                    onChange={e => setSearch(e.target.value)}
+        <div className="header">
+            <h1>I grow by helping people in need</h1>
+            <form className="searchForm" onSubmit={(e) => handleSubmit(e)}>
+                <input 
+                    type="search"
+                    value={term}
+                    onChange={(e) => setTerm(e.target.value)}
+                    placeholder="Search volunteer"
                 />
-                <button className="searchBtn" type="submit">
-                    <i className="fa fa-search"></i>
+                <button type="submit">
+                    <Link to={{
+                        pathname: "/search/",
+                        search: `?q=${term}`
+                    }} >Search</Link>
                 </button>
             </form>
         </div>
     )
 }
 
-export default Header
+export default React.memo(Header)
