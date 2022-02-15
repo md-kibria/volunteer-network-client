@@ -12,7 +12,8 @@
 /build
 
 /admin
-/pages/admin
+/src/pages/admin
+/config
 
 # misc
 .DS_Store

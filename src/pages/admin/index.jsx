@@ -7,7 +7,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Dashboard from './pages/dashboard'
 import Users from './pages/users'
 
-export class Admin extends Component {
+export class Admin extends Component { 
     render() {
 
 
